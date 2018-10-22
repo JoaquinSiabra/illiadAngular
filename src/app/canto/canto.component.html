@@ -1,0 +1,6 @@
+<span>
+ {{canto.numero}}
+</span>
+<p *ngFor="let verso of canto.versos">
+   <app-verso [verso]="verso"></app-verso>
+</p>
