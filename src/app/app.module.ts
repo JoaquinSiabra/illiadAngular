@@ -9,6 +9,9 @@ import { SelectorComponent } from './selector/selector.component';
 import { ControlComponent } from './control/control.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbTooltip} from '@ng-bootstrap/ng-bootstrap';
+import { HttpClientModule  } from '@angular/common/http';
+import { HttpErrorResponse } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +24,8 @@ import { NgbTooltip} from '@ng-bootstrap/ng-bootstrap';
   ],
   imports: [
     BrowserModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
