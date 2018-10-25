@@ -7,6 +7,8 @@ import { PalabraComponent } from './palabra/palabra.component';
 import { CantoComponent } from './canto/canto.component';
 import { SelectorComponent } from './selector/selector.component';
 import { ControlComponent } from './control/control.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbTooltip} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { ControlComponent } from './control/control.component';
     ControlComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
