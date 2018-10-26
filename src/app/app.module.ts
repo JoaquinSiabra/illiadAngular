@@ -11,7 +11,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbTooltip} from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule  } from '@angular/common/http';
 import { HttpErrorResponse } from '@angular/common/http';
-
+import {DiccionarioService} from './mock-dict';
 
 @NgModule({
   declarations: [
@@ -27,7 +27,7 @@ import { HttpErrorResponse } from '@angular/common/http';
     NgbModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [DiccionarioService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

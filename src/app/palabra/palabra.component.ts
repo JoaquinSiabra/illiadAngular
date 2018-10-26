@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Palabra } from './palabra';
+// import { Palabra } from './palabra';
+import { DiccionarioService } from './../mock-dict';
 
 @Component({
   selector: 'app-palabra',
@@ -8,8 +9,9 @@ import { Palabra } from './palabra';
 })
 export class PalabraComponent implements OnInit {
    @Input() palabra: string;
+   traduccion: string;
 
-  constructor() { }
+  constructor(private dict: DiccionarioService) {}
 
   ngOnInit() {
   }

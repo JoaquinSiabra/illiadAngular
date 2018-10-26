@@ -38,6 +38,20 @@
       "request": "launch",
       "url": "http://localhost:4200/#",
       "webRoot": "${workspaceFolder}"
+    },
+    {
+      "name": "Launch Chrome ilias on Angular CLI Server (5)",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:4200/#",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "name": "Launch Chrome ilias on Angular CLI Server (6)",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:4200/#",
+      "webRoot": "${workspaceFolder}"
     }
   ]
 }
