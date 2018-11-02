@@ -11,8 +11,13 @@ export class PalabraComponent implements OnInit {
    @Input() palabra: string;
    traduccion: string;
 
-  constructor(private dict: DiccionarioService) {}
+  constructor(private dict: DiccionarioService) {
+  }
 
   ngOnInit() {
+      this.dict.getWord(this.palabra).subscribe(
+        d=>{
+          this.traduccion = d? d.trad: null;
+        });
   }
 }

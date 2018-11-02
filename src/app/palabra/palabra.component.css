@@ -1,2 +1,8 @@
-
+.my-custom-class .tooltip-inner {
+	  color: #880000;	  
+	  max-width: 350px;
+	  width: 350px; 	  
+	  background-color: #ffff66;
+	  box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
 		
